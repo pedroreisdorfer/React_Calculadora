@@ -1,0 +1,11 @@
+/* */
+.display {
+    grid-column: span 4; /* dou um span de 4 linha, logo, o display ocupará 4 linhas*/
+    background-color: #0004;
+    display: flex; /* uso do flex box*/
+    justify-content: flex-end; /* jogo então para o lado direito*/
+    align-items: center; /* centralizo ai estando no lado direito*/ 
+    padding: 20px ;/* afastando 20px do canto*/
+    font-size: 2.1em;
+    overflow: hidden; /* não deixa os valores, por maiores que sejam, passarem do tamanho do display*/
+}

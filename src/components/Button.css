@@ -1,0 +1,34 @@
+:root { /* como usar variável em css*/
+    --bg-button: #f0f0f0; /* ou seja, backgroud do botão*/
+    --border-button: solid 1px #888;
+}
+
+.button {
+    font-size: 1.4em;
+    background-color: var(--bg-button);
+    border: none;
+    border-right: var(--border-button);
+    border-bottom: var(--border-button);
+    outline: none;
+}
+
+.button:active {
+    background-color: #ccc; /* quando clica no botão agora ele fica mais escuro */
+}
+
+.button.double { /* quando o botão ocupa duas posições. Double foi nome dado por mim*/
+    grid-column: span 2;
+}
+
+.button.triple {  /* quando ocupa 3 posições*/
+    grid-column: span 3;
+}
+
+.button.operation { /* quando botão for fazer uma operação*/
+    background-color: #fa8231;
+    color: #FFF;
+}
+
+.button.operation:active { /* quando for uma operação e estiver ativo*/
+    background-color: #fa8231cc;
+}
